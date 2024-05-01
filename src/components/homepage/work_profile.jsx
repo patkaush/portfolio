@@ -4,23 +4,23 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import "./styles/article.css";
+import "./styles/workProfile.css";
 
-const Article = (props) => {
+const WorkProfile = (props) => {
 	const { title, description, date, link } = props;
 
 	return (
 		<React.Fragment>
-			<div className="homepage-article">
-				<div className="homepage-article-content">
-					<div className="homepage-article-date">
+			<div className="workProfile-main">
+				<div className="workProfile-content">
+					<div className="workProfile-date">
 						|&nbsp;&nbsp;&nbsp;{date}
 					</div>
-					<div className="homepage-article-title">{title}</div>
-					<div className="homepage-article-description">
+					<div className="workProfile-title">{title}</div>
+					<div className="workProfile-description">
 						{description}
 					</div>
-					<div className="homepage-article-link">
+					<div className="workProfile-link">
 						<Link to={link}>
 							Read article{" "}
 							<FontAwesomeIcon
@@ -35,4 +35,4 @@ const Article = (props) => {
 	);
 };
 
-export default Article;
+export default WorkProfile;

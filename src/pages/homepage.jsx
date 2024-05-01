@@ -12,7 +12,7 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
+// import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
@@ -155,6 +155,7 @@ const Homepage = () => {
 							<div className="homepage-works">
 								<Works />
 							</div>
+
 						</div>
 
 						<div className="homepage-projects">

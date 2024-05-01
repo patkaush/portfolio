@@ -2,46 +2,35 @@ import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
+import workProfiles from "../../data/works";
+import WorkProfile from "./work_profile";
 
 import "./styles/works.css";
+import { Dialog } from "@material-ui/core";
 
 const Works = () => {
 	return (
-		<div className="works">
-			<Card
-				icon={faBriefcase}
-				title="Work"
-				body={
-					<div className="works-body">
-						<div className="work">
-							<img
-								src="./facebook.png"
-								alt="facebook"
-								className="work-image"
-							/>
-							<div className="work-title">Facebook</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
 
-						<div className="work">
-							<img
-								src="./twitter.png"
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Twitter</div>
-							<div className="work-subtitle">
-								Software Engineer
+			<div className="works-main-container">
+				<div className="works-container">
+					<div className="works-wrapper">
+						{workProfiles.map((workProfile, index) => (
+							<div
+								className="works-article"
+								key={(index + 1).toString()}
+							>
+								<WorkProfile
+									key={(index + 1).toString()}
+									date={workProfile().date_of_joining}
+									title={workProfile().title}
+									description={workProfile().description}
+									// link={"/article/" + (index + 1)}
+								/>
 							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
+						))}
 					</div>
-				}
-			/>
-		</div>
+				</div>
+			</div>
 	);
 };
 
