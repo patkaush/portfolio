@@ -20,3 +20,7 @@
 		width: calc(100% / 2);
 	}
 }
+
+.center-text {
+    text-align: center;
+}

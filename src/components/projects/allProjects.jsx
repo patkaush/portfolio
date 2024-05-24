@@ -8,7 +8,11 @@ import "./styles/allProjects.css";
 
 const AllProjects = () => {
 	return (
+		<div id="projects_section" >
+		<h1 className="center-text">Projects</h1>
 		<div className="all-projects-container">
+
+
 			{INFO.projects.map((project, index) => (
 				<div className="all-projects-project" key={index}>
 					<Project
@@ -20,6 +24,7 @@ const AllProjects = () => {
 					/>
 				</div>
 			))}
+		</div>
 		</div>
 	);
 };
