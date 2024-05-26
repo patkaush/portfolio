@@ -2,39 +2,19 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from 'react-scroll';
 import "./styles/navBar.css";
+import { useState } from 'react'
 
-let NavBar = (props) => {
-	const { isActive } = props;
+let NavBar = () => {
 	return (
 <React.Fragment>
 <div className="nav-container">
 	<nav className="navbar">
 		<div className="nav-background">
 			<ul className="nav-list">
-				<li
-					className={
-						isActive ? "nav-item active"
-							: "nav-item"
-					}
-				>
-					<Link to="home_section" smooth = {true} >Home</Link>
-				</li>
-				<li
-					className={
-						isActive ? "nav-item active"
-							: "nav-item"
-					}
-				>
-					<Link to="works_section" spy={true} smooth = {true}>Works</Link>
-				</li>
-				<li
-					className={
-						isActive ? "nav-item active"
-							: "nav-item"
-					}
-				>
-					<Link to="projects_section" spy={true} smooth={true}>Projects</Link>
-				</li>
+						
+				<li><Link to="home_section" spy={true} smooth = {true}  offset={-70} className={"nav-item"} activeClass="active">Home</Link></li>
+					<li><Link to="works_section" spy={true} smooth = {true}  offset={-70}className={"nav-item"}  activeClass="active">Works</Link></li>
+					<li><Link to="projects_section" spy={true} smooth={true}  offset={-70} className={"nav-item"} activeClass="active">Projects</Link></li>
 			</ul>
 		</div>
 	</nav>

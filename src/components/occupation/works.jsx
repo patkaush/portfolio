@@ -11,6 +11,7 @@ import {
 	VerticalTimelineElement
   } from "react-vertical-timeline-component";
   import "react-vertical-timeline-component/style.min.css";
+import NavBar from "../common/navBar";
 
 const WorkIcon = () => <></>;
 
@@ -28,6 +29,7 @@ const Works = () => {
   
 	return (
 		<div id = "works_section" className="works-main-container">
+
       <h1>Professional experience</h1>
       <Drawer
             anchor={"right"}

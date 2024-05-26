@@ -5,10 +5,12 @@ import Project from "./project";
 import INFO from "../../data/user";
 
 import "./styles/allProjects.css";
+import NavBar from "../common/navBar";
 
 const AllProjects = () => {
 	return (
 		<div id="projects_section" >
+
 		<h1 className="center-text">Projects</h1>
 		<div className="all-projects-container">
 
