@@ -3,6 +3,8 @@
 .works-main-container{
 	font-family: sans-serif;
 	text-align: center;
+	cursor: pointer;	
+
 
 }
 .vertical-timeline::before {

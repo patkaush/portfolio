@@ -9,17 +9,20 @@ const Footer = () => {
 			<div className="footer">
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
-						<li className="footer-nav-link-item">
-							<Link to="home_section">Home</Link>
+						<li >
+							<Link to="home_section" spy={true} smooth = {true}  offset={-70} className="footer-nav-link-item">Home</Link>
 						</li>
-						<li className="footer-nav-link-item">
-							<Link to="works_section">Works</Link>
+						<li >
+							<Link to="skills_section" spy={true} smooth = {true}  offset={-70} className="footer-nav-link-item">Skills</Link>
 						</li>
-						<li className="footer-nav-link-item">
-							<Link to="projects_section">Projects</Link>
+						<li >
+							<Link to="education_section" spy={true} smooth = {true}  offset={-70} className="footer-nav-link-item">Education</Link>
 						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
+						<li >
+							<Link to="works_section" spy={true} smooth = {true}  offset={-70} className="footer-nav-link-item">Works</Link>
+						</li>
+						<li >
+							<Link to="projects_section" spy={true} smooth = {true}  offset={-70} className="footer-nav-link-item">Projects</Link>
 						</li>
 					</ul>
 				</div>

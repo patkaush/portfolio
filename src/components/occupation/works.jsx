@@ -28,7 +28,7 @@ const Works = () => {
   }; 
   
 	return (
-		<div id = "works_section" className="works-main-container">
+		<div  className="works-main-container">
 
       <h1>Professional experience</h1>
       <Drawer

@@ -11,6 +11,8 @@
 	background: #fafafa;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
+	cursor: pointer;	
+
 }
 
 .workProfile-content {

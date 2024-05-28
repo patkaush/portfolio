@@ -13,8 +13,10 @@ let NavBar = () => {
 			<ul className="nav-list">
 						
 				<li><Link to="home_section" spy={true} smooth = {true}  offset={-70} className={"nav-item"} activeClass="active">Home</Link></li>
-					<li><Link to="works_section" spy={true} smooth = {true}  offset={-70}className={"nav-item"}  activeClass="active">Works</Link></li>
-					<li><Link to="projects_section" spy={true} smooth={true}  offset={-70} className={"nav-item"} activeClass="active">Projects</Link></li>
+				<li><Link to="skills_section" spy={true} smooth = {true}  offset={-70}className={"nav-item"}  activeClass="active">Skills</Link></li>
+				<li><Link to="education_section" spy={true} smooth = {true}  offset={-70}className={"nav-item"}  activeClass="active">Education</Link></li>
+				<li><Link to="works_section" spy={true} smooth = {true}  offset={-70}className={"nav-item"}  activeClass="active">Works</Link></li>
+				<li><Link to="projects_section" spy={true} smooth={true}  offset={-70} className={"nav-item"} activeClass="active">Projects</Link></li>
 			</ul>
 		</div>
 	</nav>

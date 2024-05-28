@@ -9,7 +9,7 @@ import NavBar from "../common/navBar";
 
 const AllProjects = () => {
 	return (
-		<div id="projects_section" >
+		<div  >
 
 		<h1 className="center-text">Projects</h1>
 		<div className="all-projects-container">

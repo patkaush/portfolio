@@ -27,6 +27,8 @@
 .footer-nav-link-item {
 	font-weight: bold;
 	font-size: 80%;
+	cursor: pointer;	
+
 }
 
 .footer-nav-link-list a {
