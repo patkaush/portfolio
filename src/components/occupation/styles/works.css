@@ -1,18 +1,12 @@
 @import "../../../data/styles.css";
   
-.works-main-container{
-	font-family: sans-serif;
-	text-align: center;
-	cursor: pointer;	
 
-
-}
 .vertical-timeline::before {
 	/* this is the vertical line */
   
 	background: black !important;
 }
-
+/* 
 .empty {
 	height: 600px;
 	border: 1px solid red;
@@ -25,9 +19,9 @@
 	display: flex;
 	padding-bottom: 40px;
 	width: 400px;
-}
+} */
 
-.work-image {
+/* .work-image {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
@@ -58,4 +52,19 @@
 	padding-top: 20px;
 	text-align: right;
 	color: var(--tertiary-color);
+} */
+.vertical-timeline-element-content{
+	background: green ;
+	
+}
+.vertical-timeline-icon{
+	font-size: 1.8rem !important;
+	margin-left: 20% !important;
+}
+.read-more-button{
+	margin-left: auto !important;
+}
+.work-date{
+	align-items: center;
+	
 }

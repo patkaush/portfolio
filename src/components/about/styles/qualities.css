@@ -1,0 +1,13 @@
+span{
+    align-items: center;
+}
+.quality-item{
+    width: 0px;
+}
+.quality-item:hover{
+    cursor: pointer;
+    
+}
+.back-button:hover{
+    cursor: pointer;
+}

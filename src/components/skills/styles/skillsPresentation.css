@@ -1,0 +1,24 @@
+.skill-button{
+	padding: 10px !important;
+	border-radius: 20px !important;
+}
+
+.skill-name{
+    margin: 10px !important;
+    font-weight: bold;
+}
+
+.skill-icon{
+    border-radius: 10px;
+}
+.skill-button:hover{
+    transform: scale(1.2) ; 
+    transition-timing-function: ease-in;
+
+}
+/*Danger */
+.css-1puturl-MuiDivider-root::before,.css-1puturl-MuiDivider-root::after{
+    width:100%;
+    border-top: thin dashed #67a49a !important;
+
+}

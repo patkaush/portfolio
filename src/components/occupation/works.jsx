@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from 'react';
 
 import DescriptionDrawer from "../common/descriptionDrawer";
+import WorkIcon from '@mui/icons-material/Work';
+import iconInternship from "../../images/internship-icon.svg";
 
 import workProfiles from "../../data/works";
 import WorkProfile from "./work_profile";
@@ -12,52 +14,55 @@ import {
   } from "react-vertical-timeline-component";
   import "react-vertical-timeline-component/style.min.css";
 import NavBar from "../common/navBar";
+import { Icon } from "@mui/material";
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions';
+import Button from '@mui/material/Button/';
+import CardMedia from '@mui/material/CardMedia';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import UnoImage from "../../images/uno_img.png"
+import Collapse from '@mui/material/Collapse';
 
-const WorkIcon = () => <></>;
-
+import {Typography} from "@mui/material/";
 const Works = () => {	
-  const [open, setOpen] = React.useState(false);
-  const [workDetails, setDetails] = React.useState([]);
+  // const [open, setOpen] = React.useState(false);
+  // const [workDetails, setDetails] = React.useState([]);
+  
+  // const toggleDrawer = (newOpen,workProfile = null) => () => {
+  //   setOpen(newOpen);
+  //   if(newOpen){
+  //     setDetails(workProfile);
+  
+  //   }
+  // }; 
 
-  const toggleDrawer = (newOpen,workProfile = null) => () => {
-    setOpen(newOpen);
-    if(newOpen){
-      setDetails(workProfile);
-  
-    }
-  }; 
-  
 	return (
 		<div  className="works-main-container">
 
       <h1>Professional experience</h1>
-      <Drawer
+      {/* <Drawer
             anchor={"right"}
             open={open}
             onClose={toggleDrawer(false)}
           >
           <DescriptionDrawer workDetails = {workDetails}/>
-        </Drawer>
-
-
-				<VerticalTimeline layout="1-column-left" className="works-container">
+        </Drawer> */}
+        {/* layout="1-column-left" */}
+				<VerticalTimeline layout="1-column-left"  className="works-container">
 						{workProfiles.map((workProfile, index) => (
 							<VerticalTimelineElement
                 className = {"workDetail" + (index + 1).toString()}
+                contentStyle={{ background: '#DAF7A6', color: 'black' }}
+                contentArrowStyle={{ borderRight: '10px solid  #DAF7A6' }}
 								key={(index + 1).toString()}
-                date={workProfile.date_of_joining + " - " + workProfile.data_of_ending} 
-                iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-                icon={<WorkIcon />}
+                iconStyle={{ background: '#DAF7A6', color: '#fff' }}
+                icon={workProfile.icon}
                 >
-                  <div onClick={toggleDrawer(true,workProfile)}>
-                      <h3 className="vertical-timeline-element-title">
-                        {workProfile.position}
-                      </h3>
-                      <h4 className="vertical-timeline-element-subtitle">{workProfile.company_name}</h4>
-                      <h5 className="vertical-timeline-element-subtitle">{workProfile.location}</h5>
-                      <p>{workProfile.summary}</p>
-                      
-                  </div>
+                  {console.log("profile in  works",workProfile)}
+                  <WorkProfile workProfile={workProfile}/>
             </VerticalTimelineElement>
 						))}
 			

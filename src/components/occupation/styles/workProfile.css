@@ -1,60 +1,15 @@
 @import "../../../data/styles.css";
 
-.workProfile-main {
-	width: 90%;
-	mix-blend-mode: normal;
-	border-radius: 20px;
-	opacity: 0.8;
-}
 
-.workProfile-main:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
-	cursor: pointer;	
+
+.workProfile-content .skill-button{
+	padding: 0% !important;
 
 }
-
-.workProfile-content {
-	padding: 30px;
+.workProfile-content .skill-icon{
+	font-size: 2rem ;
+	margin-top: 2%; 
 }
-
-.workProfile-date {
-	opacity: 1;
-	color: var(--tertiary-color);
-	font-size: 12px;
-	margin-bottom: 1em;
-}
-
-.workProfile-title {
-	opacity: 1;
-	color: var(--primary-color);
-	font-size: 16px;
-	margin-bottom: 1em;
-	font-weight: 700;
-}
-
-.workProfile-description {
-	opacity: 1;
-	color: var(--secondary-color);
-	font-size: 12px;
-	line-height: 1.5;
-}
-
-.workProfile-link {
-	opacity: 1;
-	padding-top: 20px;
-	font-size: 15px;
-	font-weight: 700;
-}
-
-.workProfile-link a {
-	color: var(--link-color);
-	text-decoration: none;
-}
-
-@media (max-width: 600px) {
-	.workProfile-main {
-		width: 100%;
-	}
+.workProfile-content .skills-title{
+	font-size: large;
 }

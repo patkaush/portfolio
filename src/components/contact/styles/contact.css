@@ -1,0 +1,29 @@
+/* styles/contactForm.css */
+@import "../../../data/styles.css";
+
+.contact-details-container {
+    flex: 1;
+    display : flex;
+    flex-direction : 'column';
+    justify-content: 'center'
+}
+
+.contact-form-container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form-container .MuiTypography-root {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form-container .MuiTextField-root {
+    margin-bottom: 20px;
+}
+
+.contact-form-container .MuiButton-root {
+    margin-top: 10px;
+}

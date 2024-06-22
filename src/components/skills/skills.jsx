@@ -2,23 +2,23 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import skill_sets from '../../data/skills';
+import SkillsPresentation from './skillsPresentation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SvgIcon from '@mui/material/SvgIcon';
+
 function Skills( ) {
     
     return (
+
         <div >
-            <h1>Technical Skills</h1>
-            <Box sx={{ width: '100%', bgcolor: 'background.paper', p: 2 }}>
-                {Object.entries(skill_sets).map(([category, items], index) => (
-                    <Box key={index} sx={{ mb: 2 }}>
-                        <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
-                            {category.charAt(0).toUpperCase() + category.slice(1)}:
-                        </Typography>
-                        <Typography variant="body1" component="span">
-                            {items.join(', ')}
-                        </Typography>
-                    </Box>
-                ))}
-            </Box>
+            <Typography variant="h4" component="h1" align='center' paddingTop="50px" gutterBottom>
+            Technical Skills
+            </Typography>
+            <SkillsPresentation title = "Programming Languages" skills = {skill_sets["languages"]} />
+            <SkillsPresentation title = "Frameworks" skills = {skill_sets["frameworks"]} />
+            <SkillsPresentation title = "Databases" skills = {skill_sets["databases"]} />
+            <SkillsPresentation title = "Tools" skills = {skill_sets["tools"]} />
+
         </div>
     );
 }

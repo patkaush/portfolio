@@ -21,8 +21,8 @@ const EducationCard = (props) => {
     return (
 		<div   >
     
-            <div className="education-profile-container">
-                <Card  variant="outlined" sx={{ marginBottom: 2 }}>
+            <div className="education-profile-container" >
+                <Card  elevation={2} variant="outlined"  className='card-item'>
                 <CardContent>
                 <Grid container alignItems="center" justifyContent="space-between">
                     <Grid item xs={9}>
