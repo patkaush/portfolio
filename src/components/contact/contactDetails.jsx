@@ -9,14 +9,12 @@ const ContactDetails = () => {
                 Contact Details
             </Typography>
             <Typography variant="body1">
-                <strong>LinkedIn:</strong> <Link href="https://www.linkedin.com/in/your-profile" target="_blank">Your LinkedIn Profile</Link>
+                <strong>LinkedIn:</strong> <Link href="https://www.linkedin.com/in/kaushik-pattipati/">Kaushik Pattipati</Link>
             </Typography>
             <Typography variant="body1">
                 <strong>Email:</strong> example@example.com
             </Typography>
-            <Typography variant="body1">
-                <strong>Phone:</strong> (123) 456-7890
-            </Typography>
+            
         </div>
     );
 };

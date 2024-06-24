@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, TextField, Button, Typography } from '@mui/material';
 import './styles/contact.css';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -16,8 +17,22 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const templateParams = {
+            user_email: formData.email,
+            subject: formData.subject,
+            message: formData.body,
+        };
         // Handle form submission logic here
-        console.log(formData);
+        emailjs
+        .send('service_v6lsjgu', 'template_g81ylyf',  templateParams,'JhUAVOGr1JQ26HyUJ')
+        .then(
+          () => {
+            alert('Mail sent!');
+          },
+          (error) => {
+            alert('FAILED to send. Please try messaging through LinkedIn profile. Sorry for inconvenience', error.text);
+          },
+        );
     };
 
     return (

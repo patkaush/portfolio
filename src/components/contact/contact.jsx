@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, TextField, Button, Typography } from '@mui/material';
+import { Box, TextField, Button, Typography, Divider } from '@mui/material';
 import './styles/contact.css';
 import ContactDetails from './contactDetails';
 import ContactForm from './contactForm';
@@ -21,6 +21,7 @@ const Contact = () => {
             <Box className="contact-details-container">
                 <ContactDetails />
             </Box>
+            <Divider orientation="vertical" flexItem style={{ border: "1px solid black" }} />
             <Box>
                 <ContactForm />
             </Box>
