@@ -1,28 +1,33 @@
-import React from "react";
+import React,{useState} from "react";
 
 import Project from "./project";
 
-import INFO from "../../data/user";
-
+import projects from "../../data/projects";
 import "./styles/allProjects.css";
 import NavBar from "../common/navBar";
 
 const AllProjects = () => {
+	const [expanded, setExpanded] = React.useState(false);
+
+	const handleChange = (panel) => (event, isExpanded) => {
+	  setExpanded(isExpanded ? panel : false);
+	};
+
 	return (
 		<div  >
 
 		<h1 className="center-text">Projects</h1>
+
 		<div className="all-projects-container">
 
 
-			{INFO.projects.map((project, index) => (
+			{projects.map((project, index) => (
+				
 				<div className="all-projects-project" key={index}>
 					<Project
-						logo={project.logo}
-						title={project.title}
-						description={project.description}
-						details={project.details}
-						link={project.link}
+						project={project}
+						expanded = {expanded === index }
+						handleChange = {handleChange(index)}
 					/>
 				</div>
 			))}

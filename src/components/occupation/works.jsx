@@ -43,14 +43,8 @@ const Works = () => {
 		<div  className="works-main-container">
 
       <h1>Professional experience</h1>
-      {/* <Drawer
-            anchor={"right"}
-            open={open}
-            onClose={toggleDrawer(false)}
-          >
-          <DescriptionDrawer workDetails = {workDetails}/>
-        </Drawer> */}
-        {/* layout="1-column-left" */}
+
+
 				<VerticalTimeline layout="1-column-left"  className="works-container">
 						{workProfiles.map((workProfile, index) => (
 							<VerticalTimelineElement
