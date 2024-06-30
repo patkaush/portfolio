@@ -13,7 +13,7 @@ const SkillsPresentation = (props) => {
         return (<></>);
     }
   return (
-      <Box textAlign="center" my={5}>
+      <Box textAlign="center" my={3} className="skills-content">
         <Divider className = "skill-divider">
         <Typography variant="h5" gutterBottom className='skills-title'>
           {title}

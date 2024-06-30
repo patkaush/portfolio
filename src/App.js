@@ -8,6 +8,7 @@ import Notfound from "./pages/404";
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 import NavBar from "./components/common/navBar";
+import Home from "./components/home/home";
 
 function App() {
 	useEffect(() => {
@@ -19,11 +20,13 @@ function App() {
 	return (
 		
 		<div className="App">
+
 		<NavBar/>
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
+
 		</div>
 	);
 }
