@@ -7,9 +7,15 @@
 
 }
 
-
-.homepage-skills, .homepage-works, .homepage-contact{
+.homepage-skills{
+	/* background-color: #9EB7C5 !important; */
+}
+ /* .homepage-works, .homepage-contact{
 	background-color:  #EEE8A9 !important;
 	background-size: cover;
 
+} */
+.content-wrapper{
+	margin-left: 200px;
+	margin-right: 200px;
 }

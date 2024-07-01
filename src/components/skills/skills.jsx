@@ -10,7 +10,7 @@ function Skills( ) {
     
     return (
 
-        <div >
+        <div className='skills-container'>
             <Typography variant="h4" component="h1" align='center' paddingTop="50px" gutterBottom>
             Technical Skills
             </Typography>

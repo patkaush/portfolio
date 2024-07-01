@@ -79,7 +79,7 @@ const Profiles = () => (
                     target="_blank"
                     rel="noreferrer"
                 >
-                <Icon fontSize='large'>
+                <Icon fontSize='large' color='blue' >
                    <img className="third-party-icon" src={hackerrank} alt="Logo" />
                    </Icon>
                 </a>
@@ -88,7 +88,7 @@ const Profiles = () => (
     </Paper>
 );
 const AboutMe = () => (
-    <div>
+    <div className='aboutme-container'>
         <Typography variant="h4" gutterBottom align="center">
             About me
         </Typography>

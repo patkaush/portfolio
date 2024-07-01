@@ -42,17 +42,15 @@ const Works = () => {
 	return (
 		<div  className="works-main-container">
 
-      <h1>Professional experience</h1>
-
-
+      <Typography variant="h4" gutterBottom align="center">Professional experience</Typography>
 				<VerticalTimeline layout="1-column-left"  className="works-container">
 						{workProfiles.map((workProfile, index) => (
 							<VerticalTimelineElement
                 className = {"workDetail" + (index + 1).toString()}
-                contentStyle={{ background: '#DAF7A6', color: 'black' }}
-                contentArrowStyle={{ borderRight: '10px solid  #DAF7A6' }}
+                contentStyle={{ background: '#E6F4F1', color: 'black' }}
+                contentArrowStyle={{ borderRight: '10px solid  #E6F4F1' }}
 								key={(index + 1).toString()}
-                iconStyle={{ background: '#DAF7A6', color: '#fff' }}
+                iconStyle={{ background: '#94ABE1', color: '#fff' }}
                 icon={workProfile.icon}
                 >
                   {console.log("profile in  works",workProfile)}

@@ -30,37 +30,46 @@ const Homepage = () => {
 
 			<Home/>
 			<div  className="page-content">
-				<div className="content-wrapper">
 
 
 					<div className="homepage-aboutme" id="home_section" >
-						<AboutMe/>
-					
+						<div className="content-wrapper">
+							<AboutMe className="container"/>
+						</div>
 					</div>
 					<div className="homepage-skills" id = "skills_section">
-						<Skills />
+						<div className="content-wrapper">
+							<Skills />
+						</div>
+
 					</div>
 					<div className="homepage-education" id = "education_section">
-						<Education />
-					</div>
-					
+						<div className="content-wrapper">
+							<Education />
+						</div>
+					</div>					
 					<div className="homepage-works" id = "works_section">
-						<Works />
+						<div className="content-wrapper">
+							<Works />
+						</div>
 					</div>
-
 					<div className="homepage-projects" id="projects_section">
-						<AllProjects />
+						<div className="content-wrapper">
+							<AllProjects />
+						</div>
 					</div>
-
 					<div className="homepage-contact" id="contact_section">
-						<Contact />
+						<div className="content-wrapper">
+							<Contact />
+						</div>
 					</div>
-
 					<div className="page-footer">
-						<Footer />
+						<div className="content-wrapper">
+							<Footer />
+						</div>
 					</div>
 				</div>
-			</div>
+
 		</React.Fragment>
 	);
 };

@@ -1,6 +1,8 @@
 .skill-button{
 	padding: 10px !important;
 	border-radius: 20px !important;
+    background-color: #E6f4f1 !important;
+
 }
 
 .skill-name{
@@ -22,9 +24,11 @@
     border-top: thin dashed #67a49a !important;
 
 }
-/* .skills-content{
+.skills-content{
     border-width: 3px;
-    border : 1px solid yellowgreen;
-    border-top-style : none;
-    padding-bottom: 2%;
-} */
+    border : 1px solid #725570;
+    border-radius: 10px;
+    padding: 1%;
+    width: 50%;
+    margin-left:25% ;
+}
