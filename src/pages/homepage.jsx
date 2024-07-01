@@ -33,7 +33,7 @@ const Homepage = () => {
 				<div className="content-wrapper">
 
 
-					<div id="home_section" className="homepage-container">
+					<div className="homepage-aboutme" id="home_section" >
 						<AboutMe/>
 					
 					</div>

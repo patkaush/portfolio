@@ -1,20 +1,15 @@
 @import "../../data/styles.css";
 
 
-
-.homepage-skills{
-	background-color:  #F5F5DD !important;
+.homepage-aboutme, .homepage-education, .homepage-projects{
+	background-color:  #E6F4F1 !important;
 	background-size: cover;
 
 }
 
-.homepage-works{
-	background-color:  #F5F5DD !important;
-	background-size: cover;
 
-}
-.homepage-contact{
-	background-color:  #F5F5DD !important;
+.homepage-skills, .homepage-works, .homepage-contact{
+	background-color:  #EEE8A9 !important;
 	background-size: cover;
 
 }
