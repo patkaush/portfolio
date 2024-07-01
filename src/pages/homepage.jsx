@@ -27,39 +27,40 @@ const Homepage = () => {
 
 	return (
 		<React.Fragment>
+
 			<Home/>
-			<Parallax
-			strength={400}
-			>
-			<div id="home_section" className="homepage-container">
+			<div  className="page-content">
+				<div className="content-wrapper">
+
+
+					<div id="home_section" className="homepage-container">
 						<AboutMe/>
 					
-			</div>
-			</Parallax>
+					</div>
+					<div className="homepage-skills" id = "skills_section">
+						<Skills />
+					</div>
+					<div className="homepage-education" id = "education_section">
+						<Education />
+					</div>
+					
+					<div className="homepage-works" id = "works_section">
+						<Works />
+					</div>
 
-			<div className="homepage-skills" id = "skills_section">
-				<Skills />
-			</div>
-			<div className="homepage-education" id = "education_section">
-				<Education />
-			</div>
-			
-			<div className="homepage-works" id = "works_section">
-				<Works />
-			</div>
+					<div className="homepage-projects" id="projects_section">
+						<AllProjects />
+					</div>
 
-			<div className="homepage-projects" id="projects_section">
-				<AllProjects />
-			</div>
+					<div className="homepage-contact" id="contact_section">
+						<Contact />
+					</div>
 
-			<div className="homepage-contact" id="contact_section">
-				<Contact />
+					<div className="page-footer">
+						<Footer />
+					</div>
+				</div>
 			</div>
-
-			<div className="page-footer">
-				<Footer />
-			</div>
-
 		</React.Fragment>
 	);
 };

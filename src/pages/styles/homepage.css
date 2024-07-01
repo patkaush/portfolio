@@ -1,19 +1,6 @@
 @import "../../data/styles.css";
 
 
-.homepage-container {
-	padding-top: 25px;
-	background-size: none;
-
-}
-.parallax-section {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  
-
 
 .homepage-skills{
 	background-color:  #F5F5DD !important;
@@ -31,16 +18,3 @@
 	background-size: cover;
 
 }
-.parallax {
-	/* The image used */
-	background-color: "#ADD8E7";
-  
-	/* Full height */
-	height: 100%; 
-  
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  }
