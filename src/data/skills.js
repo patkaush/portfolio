@@ -14,7 +14,6 @@ let IconTypescript =
 let IconSql = 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" />
 
-const languages =  {"Java" : IconJava ,"Python" :IconPython , "C#" : IconCsharp  , "SQL":IconSql ,"JavaScript" : IconJavascript, "Typescript" : IconTypescript}
 
 let IconDjango = 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
@@ -25,7 +24,6 @@ let IconSpring =
 
 let IconRest = <img src={SVGREST} />
 
-const frameworks = {"Django" : IconDjango, "ReactJS" : IconReact, "Spring Framework" : IconSpring,"REST Services":IconRest};
 let IconOracle = 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" />
 let IconMySql = 
@@ -34,7 +32,6 @@ let IconMySql =
 let IconPostgre = 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
 
-const databases = {"Oracle" : IconOracle, "MySql" : IconMySql, "PostgreSql" : IconPostgre};
 
 let IconGit = 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
@@ -48,6 +45,11 @@ let IconDocker =
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
 let IconTeamCity = <img src = {TeamCitySVG}/>
 let IconFority = <img src = {ForitySVG}/>
+
+
+const languages =  {"Java" : IconJava ,"Python" :IconPython , "C#" : IconCsharp  , "SQL":IconSql ,"JavaScript" : IconJavascript, "Typescript" : IconTypescript}
+const frameworks = {"Django" : IconDjango, "ReactJS" : IconReact, "Spring Framework" : IconSpring,"REST Services":IconRest};
+const databases = {"Oracle" : IconOracle, "MySql" : IconMySql, "PostgreSql" : IconPostgre};
 const tools = {"GIT":IconGit, "Selenium":IconSelenium, "Fortify Security tool":IconFority, "TeamCity":IconTeamCity, "AWS":IconAWS, "Docker":IconDocker}
 
 

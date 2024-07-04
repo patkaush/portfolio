@@ -1,0 +1,50 @@
+.hex-grid {
+    align-items: center !important;
+    justify-content: center;
+    display: flex !important;
+    /* background: #41C7AC !important; */
+}
+
+.hex-grid:hover{
+    /* transform: scale(1.2) ;  */
+    transition-timing-function: ease-in;
+    background: #2CB5B2 !important;
+}
+.hex-grid .container{
+    align-items: center ;
+    flex-direction: column;
+
+}
+
+.hex-grid .skill-icon{
+    font-size: 2.6rem;
+}
+.hex-grid .skill-name{
+    color:white;
+}
+.skills-legend{
+    justify-content: center;
+}
+.skills-legend .grid-item{
+    margin: 5%;
+}
+
+.languages{
+    background: #41C7AC  ;
+}
+.frameworks{
+    background: #94ABE1 !important;
+}
+.databases{
+    background: #E6F4F1 !important;
+}
+.tools{
+    background: #EEE8A9 !important;
+}
+
+.databases .skill-name{
+    color: black !important;
+}
+.tools .skill-name{
+    color: black !important;
+}

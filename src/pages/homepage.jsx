@@ -37,6 +37,17 @@ const Homepage = () => {
 							<AboutMe className="container"/>
 						</div>
 					</div>
+					<div className="homepage-works" id = "works_section">
+						<div className="content-wrapper">
+							<Works />
+						</div>
+					</div>
+					<div className="homepage-projects" id="projects_section">
+						<div className="content-wrapper">
+							<AllProjects />
+						</div>
+					</div>
+
 					<div className="homepage-skills" id = "skills_section">
 						<div className="content-wrapper">
 							<Skills />
@@ -48,16 +59,6 @@ const Homepage = () => {
 							<Education />
 						</div>
 					</div>					
-					<div className="homepage-works" id = "works_section">
-						<div className="content-wrapper">
-							<Works />
-						</div>
-					</div>
-					<div className="homepage-projects" id="projects_section">
-						<div className="content-wrapper">
-							<AllProjects />
-						</div>
-					</div>
 					<div className="homepage-contact" id="contact_section">
 						<div className="content-wrapper">
 							<Contact />

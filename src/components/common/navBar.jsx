@@ -21,10 +21,10 @@ let NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const icons = [
         { icon: <HomeIcon />, name: "Home" ,link : "home_section"},
-        { icon: <HandymanIcon />, name: "Skills" ,link : "skills_section"},
-        { icon: <AccountBalanceIcon />, name: "Education" ,link : "education_section"},
         { icon: <WorkIcon />, name: "Works" ,link : "works_section"},
         { icon: <ComputerIcon />, name: "Projects" ,link : "projects_section"},
+        { icon: <HandymanIcon />, name: "Skills" ,link : "skills_section"},
+        { icon: <AccountBalanceIcon />, name: "Education" ,link : "education_section"},
         { icon: <ContactMail />, name: "Contact" ,link : "contact_section"},
     ];
 	return (
