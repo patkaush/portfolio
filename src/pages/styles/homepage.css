@@ -1,18 +1,19 @@
 @import "../../data/styles.css";
 
-
-.homepage-aboutme, .homepage-education, .homepage-projects{
-	background-color:  #E6F4F1 !important;
+.homepage-aboutme, .homepage-education, .homepage-contact{
+	height: 100vh;
+}
+.homepage-aboutme, .homepage-education, .homepage-projects,.homepage-contact{
+	background-color:  #F6F2DE !important;
+	background-size: cover;
+	/* background-position: 'center';
+	background-attachment: 'fixed';  */
+}
+/* .homepage-works */
+/* .homepage-skills {
+	background-color:   #F5DBC0!important;
 	background-size: cover;
 
-}
-
-.homepage-skills{
-	/* background-color: #9EB7C5 !important; */
-}
- /* .homepage-works, .homepage-contact{
-	background-color:  #EEE8A9 !important;
-	background-size: cover;
 
 } */
 .content-wrapper{

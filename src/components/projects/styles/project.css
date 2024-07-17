@@ -11,7 +11,11 @@
 	border-radius: 20px !important;
 }
 .project-container{
-	border: 2px !important;
-	background: #94ABE1 !important;
-	padding:1%;
+	border-radius: 10px !important;
+	background: var(--primary-color) !important;
+	color: var(--quaternary-color) !important;
+
+}
+.project-title{
+	color: var(--quaternary-color);
 }

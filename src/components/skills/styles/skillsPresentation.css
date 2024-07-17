@@ -1,7 +1,7 @@
 .skill-button{
 	padding: 10px !important;
 	border-radius: 20px !important;
-    background-color: #E6f4f1 !important;
+    background-color: #E6f4f1 ;
 
 }
 
@@ -21,7 +21,7 @@
 /*Danger */
 .css-1puturl-MuiDivider-root::before,.css-1puturl-MuiDivider-root::after{
     width:100%;
-    border-top: thin dashed #67a49a !important;
+    border-top: thin dashed var(--primary-color) !important;
 
 }
 .skills-content{

@@ -5,6 +5,7 @@ import Project from "./project";
 import projects from "../../data/projects";
 import "./styles/allProjects.css";
 import NavBar from "../common/navBar";
+import { Typography } from "@mui/material";
 
 const AllProjects = () => {
 	const [expanded, setExpanded] = React.useState(false);
@@ -16,7 +17,7 @@ const AllProjects = () => {
 	return (
 		<div  >
 
-		<h1 className="center-text">Projects</h1>
+		<Typography variant="h2" align="center" className='section-title' style={{color:' var(--primary-color) '}}>Projects</Typography>
 
 		<div className="all-projects-container">
 

@@ -16,7 +16,7 @@ let Qualities = () => {
     let [quality,setQuality] = useState(false);
     return (
     <ReactCardFlip isFlipped={flip} >
-        <Paper elevation={3} className='paper-comp'>
+        <Paper elevation={3} className='qualities-container'>
                 
             <Typography variant="body1">
                 <Typography variant="h5" gutterBottom>
@@ -36,7 +36,7 @@ let Qualities = () => {
 
 
         </Paper>
-        <Paper elevation={3} className='paper-comp'>
+        <Paper elevation={3} className='qualities-container'>
             <Typography variant="body1">
                 <Typography variant="h5" gutterBottom>
                     <a className="back-button"onClick={() => setFlip(!flip)}>{<ArrowBackIcon />}</a> 

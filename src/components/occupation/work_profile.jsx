@@ -23,29 +23,30 @@ const WorkProfile = (props) => {
 	};
 	
 	return (
-		<Card sx={{ minWidth: 275 }}  className='card-item'>
+		<Card sx={{ minWidth: 275, backgroundColor:"transparent",boxShadow:"None" }}  >
 		<CardContent>
 			<Grid container>
 			  <Grid  xs={9}>
-			  <Typography className="work-date"variant="h4" >{workProfile.position}</Typography>
+			  <Typography className="work-position"variant="h4" >{workProfile.position}</Typography>
 			  </Grid>
-			  <Grid  xs = {3} sx={{alignContent:"center"}}>
+			  <Grid  xs = {3} sx={{alignContent:"center",textAlign:"right"}}>
 			  <Typography className="work-date"variant="h7" >{workProfile.date_of_joining + " - " + workProfile.data_of_ending} </Typography>
 			  </Grid>
 			  <Grid  xs={10}>
-			  <h4 >{workProfile.company_name}</h4>
+			  <Typography className="work-company"variant="h6" >{workProfile.company_name} </Typography>
 			  </Grid>
-			  <Grid  xs={2}>
-			  <h5 >{workProfile.location}</h5>
+			  <Grid  xs={2} sx={{alignContent:"center",textAlign:"right"}}>
+			  <Typography className="work-location"variant="h7" >{workProfile.location} </Typography>
 			  </Grid>
-			  <Grid  >
-				<p>{workProfile.summary}</p>
+			  <Grid xs = {12} >
+				<Typography variant='h6' className="work-summary" style={{textAlign:"center"}}>{workProfile.summary}</Typography>
 			  </Grid>
 			</Grid>
 		</CardContent>
-		<CardActions disableSpacing>
-		  <Button className="read-more-button" size="small" margin onClick={handleExpandClick} >
-		  {expanded ? "Hide Details" : "Read more"}
+		<CardActions disableSpacing style={{padding:"0"}}>
+		  <Button className="read-more-button" size="small"  onClick={handleExpandClick} style={{color:'var(--primary-color)',padding:"0",textTransform:"none"}}>
+		   <Typography variant='h6' style={{textAlign:"right",color : "var(--secondary-color)"}}>{expanded ?"Hide Details" : "Read more"} </Typography>
+		   
 		  </Button>
 
 		</CardActions>

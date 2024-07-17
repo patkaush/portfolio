@@ -2,14 +2,25 @@
 
 
 
+
+.work-position, .work-summary{
+	color : var(--secondary-color);
+}
 .workProfile-content .skill-button{
 	padding: 0% !important;
-
+	background-color: var(--tertiary-color);
 }
 .workProfile-content .skill-icon{
-	font-size: 2rem ;
 	margin-top: 2%; 
 }
 .workProfile-content .skills-title{
 	font-size: large;
+	color: var(--primary-color);
+}
+.workProfile-content{
+	color: var(--primary-color);
+}
+
+.work-content-heading{
+	color: var(--secondary-color);
 }

@@ -24,14 +24,14 @@ let NavBar = () => {
         { icon: <WorkIcon />, name: "Works" ,link : "works_section"},
         { icon: <ComputerIcon />, name: "Projects" ,link : "projects_section"},
         { icon: <HandymanIcon />, name: "Skills" ,link : "skills_section"},
-        { icon: <AccountBalanceIcon />, name: "Education" ,link : "education_section"},
+        // { icon: <AccountBalanceIcon />, name: "Education" ,link : "education_section"},
         { icon: <ContactMail />, name: "Contact" ,link : "contact_section"},
     ];
 	return (
         <div className="nav-container">
                 <BottomNavigation showLabels id="bottom-nav">
                     {icons.map((item, index) => (
-                        <Link to = {item.link} key={index} spy={true} smooth = {true}  offset={-40}  activeClass="active" >
+                        <Link to = {item.link} key={index} spy={true} smooth = {true}    activeClass="active" >
                             <Tooltip title={item.name}  placement="top"  >
                                 <IconButton className="nav-item"  >
                                     {item.icon}
@@ -43,7 +43,7 @@ let NavBar = () => {
                 </BottomNavigation>
         <Box className = "navbar">
             {icons.map((item, index) => (
-                <Link to = {item.link} key={index} spy={true} smooth = {true}  offset={-40}  activeClass="active" >
+                <Link to = {item.link} key={index} spy={true} smooth = {true}    activeClass="active" >
                     <Tooltip title={item.name}  placement="right" >
                         <IconButton className="nav-item"  >
                             {item.icon}

@@ -35,24 +35,3 @@ const ProjectDetails = (props) => {
 };
 
 export default ProjectDetails;
-{/* <div className="all-projects-container">
-<Dialog open={open} onClose={handleToClose}>
-    <DialogTitle>{title}</DialogTitle>
-
-    <DialogContent>
-    <List sx={{
-                listStyleType: 'disc',
-                listStylePosition: 'inside'
-            }}
-            >
-            {detailsUILIist}
-    </List>
-    </DialogContent>
-    <DialogActions>
-        <Button onClick={handleToClose}
-            color="primary" autoFocus>
-            Close
-        </Button>
-    </DialogActions>
-</Dialog>
-</div> */}

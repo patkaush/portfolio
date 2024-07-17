@@ -15,6 +15,25 @@ import Education from "../components/education/education";
 import Skills from "../components/skills/skills";
 import AboutMe from "../components/about/about";
 import Home from "../components/home/home"
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const fontType = createTheme({
+	typography: {
+	  fontFamily: 'Open Sans, sans-serif',
+	  h1: {
+		fontWeight: 700,
+	  },
+	  h2: {
+		fontWeight: 600,
+	  },
+	  body1: {
+		fontWeight: 400,
+	  },
+	  body2: {
+		fontWeight: 300,
+	  },
+	},
+  });
 const Homepage = () => {
 
 
@@ -27,7 +46,7 @@ const Homepage = () => {
 
 	return (
 		<React.Fragment>
-
+			<ThemeProvider theme={fontType}>
 			<Home/>
 			<div  className="page-content">
 
@@ -54,11 +73,11 @@ const Homepage = () => {
 						</div>
 
 					</div>
-					<div className="homepage-education" id = "education_section">
+					{/* <div className="homepage-education" id = "education_section">
 						<div className="content-wrapper">
 							<Education />
 						</div>
-					</div>					
+					</div>					 */}
 					<div className="homepage-contact" id="contact_section">
 						<div className="content-wrapper">
 							<Contact />
@@ -70,7 +89,7 @@ const Homepage = () => {
 						</div>
 					</div>
 				</div>
-
+				</ThemeProvider>
 		</React.Fragment>
 	);
 };

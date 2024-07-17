@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import DescriptionDrawer from "../common/descriptionDrawer";
 import WorkIcon from '@mui/icons-material/Work';
 import iconInternship from "../../images/internship-icon.svg";
-
+import "../../data/styles.css";
 import workProfiles from "../../data/works";
 import WorkProfile from "./work_profile";
 import Drawer from '@mui/material/Drawer';
@@ -28,29 +28,21 @@ import Collapse from '@mui/material/Collapse';
 
 import {Typography} from "@mui/material/";
 const Works = () => {	
-  // const [open, setOpen] = React.useState(false);
-  // const [workDetails, setDetails] = React.useState([]);
-  
-  // const toggleDrawer = (newOpen,workProfile = null) => () => {
-  //   setOpen(newOpen);
-  //   if(newOpen){
-  //     setDetails(workProfile);
-  
-  //   }
-  // }; 
+
 
 	return (
 		<div  className="works-main-container">
 
-      <Typography variant="h4" gutterBottom align="center">Professional experience</Typography>
+      <Typography variant="h2"  align="center" className='section-title' style={{color:' var(--primary-color) '}}>Professional experience</Typography>
 				<VerticalTimeline layout="1-column-left"  className="works-container">
 						{workProfiles.map((workProfile, index) => (
 							<VerticalTimelineElement
                 className = {"workDetail" + (index + 1).toString()}
-                contentStyle={{ background: '#E6F4F1', color: 'black' }}
-                contentArrowStyle={{ borderRight: '10px solid  #E6F4F1' }}
+                contentStyle={{ background: 'var(--quaternary-color)', color: 'var(--secondary-color)',borderRadius:"20px" }}
+                contentArrowStyle={{ borderRight: '10px solid  var(--tertiary-color)' }}
 								key={(index + 1).toString()}
-                iconStyle={{ background: '#94ABE1', color: '#fff' }}
+                lineColor = "#131842"
+                iconStyle={{ background: 'var(--tertiary-color)', color: '#fff' }}
                 icon={workProfile.icon}
                 >
                   {console.log("profile in  works",workProfile)}

@@ -19,8 +19,11 @@
 .hex-grid .skill-icon{
     font-size: 2.6rem;
 }
-.hex-grid .skill-name{
-    color:white;
+.tools .skill-name, .languages .skill-name{
+    color: var(--quaternary-color) !important;
+}
+.frameworks .skill-name, .databases .skill-name{
+    color: var(--primary-color) !important;
 }
 .skills-legend{
     justify-content: center;
@@ -30,21 +33,15 @@
 }
 
 .languages{
-    background: #41C7AC  ;
+    background: var(--primary-color)  ;
 }
 .frameworks{
-    background: #94ABE1 !important;
+    background: var(--quaternary-color) !important;
 }
 .databases{
-    background: #E6F4F1 !important;
+    background: var(--tertiary-color) !important;
 }
 .tools{
-    background: #EEE8A9 !important;
+    background: var(--secondary-color) !important;
 }
 
-.databases .skill-name{
-    color: black !important;
-}
-.tools .skill-name{
-    color: black !important;
-}

@@ -8,7 +8,7 @@ let projects =[
 			details : ["Orchestrated the design and developed a robust three-tier architecture web application, utilizing ReactJS for the frontend and Spring MVC, Spring REST for backend APIs, resulting in a 30% improvement in user interface responsiveness.",
 			"Integrated a hybrid recommendation system, employing the Naive Bayes Classifier and K-Nearest Neighbors (KNN) algorithm to deliver personalized company recommendations to users, contributing to a 25% reduction in the time required for users to make decisions about potential companies"
 			],
-					  	
+			date : "Jan 2022 to June 2022",
 			techStack: {
 				languages :{"Java":skill_sets["languages"]["Java"], "JavaScript":skill_sets["languages"]["JavaScript"]},
 				frameworks:{"Spring Framework" : skill_sets["frameworks"]["Spring Framework"],"ReactJS" : skill_sets["frameworks"]["ReactJS"]},
@@ -24,6 +24,7 @@ let projects =[
 				"An android application which allows users to file municipal complaints.",
 			details :  ["Developed an Android application in Java using Android Studio, resulting in a 30% increase in user satisfaction for municipal complaint filing. Utilized SQL databases for efficient data storage and retrieval.",
 						"Integrated a Decision Tree machine learning model, leading to a 25% improvement in automated complaint prioritization and a 20% overall efficiency gain."],
+			date : "Oct 2021 to Dec 2021",
 			techStack: {								
 						languages :{"Java":skill_sets["languages"]["Java"], "SQL":skill_sets["languages"]["SQL"]}
 			},
@@ -40,6 +41,7 @@ let projects =[
 						"Allows the users to edit the audio.",
 						"Developed using Django framework (backend - Python, Frontend - HTML, CSS, JavaScript).",
 						"Uses selenium framework for Web scraping."],
+			date : "Dec 2020 to Jan 2021",
 			techStack: {
 				languages :{"Python":skill_sets["languages"]["Python"]},
 				frameworks:{"Django" : skill_sets["frameworks"]["Django"]},
@@ -57,6 +59,7 @@ let projects =[
 				"Allows users to edit and update information and changes made by one user get reflected across all other users.",
 				"Developed using Django framework (backend - Python, Frontend - HTML, CSS,Javascript).",
 				"Uses MySQL for the database."],
+			date : "Mar 2020 to Apr 2020",
 			techStack: {
 				languages :{"Python":skill_sets["languages"]["Python"]},
 				frameworks:{"Django" : skill_sets["frameworks"]["Django"]},
@@ -74,6 +77,7 @@ let projects =[
 			details : ["A single-level 2-D game where a player has to collect the food (without being caught by the enemies) to win the game.",
 						"Created using C language."],
 					  	
+			date : "Sep 2019 to Oct 2019",
 
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",

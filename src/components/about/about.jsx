@@ -1,41 +1,56 @@
 import React from 'react';
-import { Grid, Paper, Typography,Box, Icon } from '@mui/material';
+import { Grid, Paper, Typography,Box, Icon, Stack } from '@mui/material';
 import INFO from "../../data/user";
 import "./styles/about.css"
-import { faL, faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Qualities from "./qualities";
 import Tooltip from '@mui/material/Tooltip';
 
-import {
-	faGithub,
-	faLinkedinIn,
-	faStackOverflow
-} from "@fortawesome/free-brands-svg-icons";
 import about_profile from "../../data/about"
 import lclogo from '../../images/leetcode-svgrepo-com.svg';
 import hackerrank from '../../images/hackerrank-svgrepo-com.svg';
+import { styled } from '@mui/system';
 
+const Highlight = styled('span')({
+	color:"var(--secondary-color)"
+});
+
+const HighlightedText = ({ text, keywords }) => {
+  const parts = text.split(new RegExp(`(${keywords.join('|')})`, 'gi'));
+  console.log(parts);
+  return (
+    <Typography variant="h6"  style={{color:' var(--primary-color) '}}>
+      {parts.map((part, index) => 
+        keywords.includes(part.toLowerCase()) ? (
+          <Highlight key={index}>{part}</Highlight>
+        ) : (
+          part
+        )
+      )}
+    </Typography>
+  );
+};
 const Personal = () => (
-            <Paper elevation={3} className='paper-comp personal-comp'>
-                  <div className="title homepage-title">
-                    {INFO.homepage.title}
-                  </div>
+     
+    <div className="personal-description">
+      {INFO.homepage.description.map((text, index) => (
+        <>
+        <HighlightedText key={index} text={text} keywords={INFO.homepage.keywords} /> 
+        <br/>
+        </>
+        
+      ))}
 
-                  <div className="subtitle homepage-subtitle">
-                    {INFO.homepage.description}
-                  </div>
 
+    </div>
 
-            </Paper>
 
 );
 
 const Profiles = () => (
 
-  <Paper elevation={3} className='paper-comp'>
+  <Paper elevation={3} className='profiles-container'>
     <Typography variant="h5" gutterBottom>
       Social Profiles
     </Typography>
@@ -88,22 +103,21 @@ const Profiles = () => (
     </Paper>
 );
 const AboutMe = () => (
-    <div className='aboutme-container'>
-        <Typography variant="h4" gutterBottom align="center">
+    <Grid  id='aboutme-container' >
+      <Grid xs={12} >
+        <Typography variant="h2" align="center" className='section-title' style={{color:' var(--primary-color) '}}>
             About me
         </Typography>
-        <Grid id="grid-container" container >
-          <Grid item className="grid-item full-width">
-            <Personal />
-          </Grid>
-          <Grid item className="grid-item half-width" >
-            <Qualities />
-          </Grid>
-          <Grid item className="grid-item half-width" >
-            <Profiles />
-          </Grid>
         </Grid>
-  </div>
+        <Grid xs = {12}> <Personal /></Grid>
+      <Grid xs = {12}>
+        <Grid id="qualities-profiles-container" container  >
+          <Grid class="item"> <Qualities /> </Grid>
+          <Grid class="item" > <Profiles /> </Grid>
+        </Grid>
+      </Grid>
+        
+  </Grid>
 );
 
 export default AboutMe;

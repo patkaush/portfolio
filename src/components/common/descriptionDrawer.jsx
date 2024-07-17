@@ -16,7 +16,7 @@ export default function DescriptionDrawer({workDetails}) {
   console.log(tech_stack)
   let detailsUILIist = [];
   details.forEach( (detail,index) => {
-      detailsUILIist.push( <ListItem key={index} sx={{ display: 'list-item' }}>{detail}</ListItem>)
+      detailsUILIist.push( <ListItem key={index} sx={{ display: 'list-item' }}><Typography variant="h7">{detail}</Typography></ListItem>)
   });
 
   return (
@@ -24,21 +24,21 @@ export default function DescriptionDrawer({workDetails}) {
 
         <Grid container spacing={2} className='description-container'>
 
-                  <Grid item xs={6}>
-                    <Typography variant="subtitle1">Description</Typography>
+                  <Grid item xs={7}>
+                    <Typography variant="h4" className='work-content-heading'>Description</Typography>
                     {detailsUILIist}
                   </Grid>
                   <Divider orientation="vertical" flexItem />
 
                   <Grid item xs={4}>
-                    <Typography variant="subtitle1">Tech Stack</Typography>
+                    <Typography variant="h4" className='work-content-heading'>Tech Stack</Typography>
                     <SkillsPresentation title = "Programming Languages" skills = {tech_stack["languages"]} />
                     <SkillsPresentation title = "Frameworks" skills = {tech_stack["frameworks"]} />
                     <SkillsPresentation title = "Databases" skills = {tech_stack["databases"]} />
                     <SkillsPresentation title = "Tools" skills = {tech_stack["tools"]} />
 
                   </Grid>
-                </Grid>
+        </Grid>
       </Box>
   );
 }

@@ -13,14 +13,14 @@ const SkillsPresentation = (props) => {
         return (<></>);
     }
   return (
-      <Box textAlign="center" my={3} className="skills-content">
-        {/* <Divider className = "skill-divider"> */}
+     <Box textAlign="center" my={5}>
+        <Divider className = "skill-divider">
         <Typography variant="h5" gutterBottom className='skills-title'>
           {title}
         </Typography>
 
 
-        {/* </Divider> */}
+        </Divider>
         <Grid container spacing={4} justifyContent="center">
             {Object.entries(skills).map( ([name,icon]) => 
             <Grid item>

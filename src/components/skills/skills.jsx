@@ -9,6 +9,7 @@ import "./styles/skills.css"
 import { ResponsiveHoneycomb, Hexagon } from 'react-honeycomb';
 import { Grid, Icon, Stack } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
+import HoneyCombGrid from '../common/HoneyCombGrid';
 
 
 let SkillsLegend = ({color,name}) =>{
@@ -37,35 +38,16 @@ function Skills( ) {
     return (
 
         <div className='skills-container'>
-            <Typography variant="h4" component="h1" align='center' paddingTop="50px" gutterBottom>
-            Technical Skills
-            </Typography>
-            <Box className="skills-table">
-                <ResponsiveHoneycomb
-                    defaultWidth={10}
-                    size={70} 
-                    items={mergeSkills(skill_sets)}
-                    renderItem={([category,name,icon]) => (
-                        <Hexagon className={'hex-grid '+category}
-                        >
-                            <Box display="flex"  className="container">
-                            <Icon className='skill-icon' > {icon} </Icon>
-                                <Typography variant="h7" textAlign="center"  className='skill-name'>
-                                    {name}
-                                </Typography>
-                                
-                            </Box>                        
-                            
-                        
-                        </Hexagon>
+      <Typography variant="h2"  align="center" className='section-title' style={{color:' var(--primary-color) '}}>Technical Skills</Typography>
 
-                    )}
-                    />
+            <Box className="skills-table">
+                    <HoneyCombGrid skills={mergeSkills(skill_sets)}/>
+
                     <Grid display={"flex"} className='skills-legend'>
-                        <SkillsLegend color = "#5189b8" name = "Programming Languages"/> 
-                        <SkillsLegend color = "#94ABE1" name = "Frameworks"/> 
-                        <SkillsLegend color = "#E6F4F1" name = "Databases"/> 
-                        <SkillsLegend color = "#EEE8A9" name = "Tools"/> 
+                        <SkillsLegend color = " var(--primary-color) " name = "Programming Languages"/> 
+                        <SkillsLegend color = "var(--quaternary-color)" name = "Frameworks"/> 
+                        <SkillsLegend color = "var(--tertiary-color)" name = "Databases"/> 
+                        <SkillsLegend color = "var(--secondary-color)" name = "Tools"/> 
                     </Grid>
                 </Box>
         </div>

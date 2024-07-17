@@ -4,12 +4,13 @@ import educationProfile from "../../data/education";
 
 import "./styles/education.css";
 import EducationCard from "./educationCard";
+import { Typography } from "@mui/material";
 
 const Education = () => {
 	return (
 		<div  >
 
-		<h1 className="center-text">Education</h1>
+		<Typography variant="h3" className="center-text">Education</Typography>
 		<div className="education-container">
 
 
