@@ -13,7 +13,7 @@ import "./styles/project.css";
 import { List,ListItem,Card,Typography,CardContent } from "@mui/material";
 
 import { styled } from '@mui/material/styles';
-import HoneyCombGrid from "../common/HoneyCombGrid";
+import {mergeSkills,HoneyCombGrid} from "../common/HoneyCombGrid";
 const Item = styled(Paper)(({ theme }) => ({
 	...theme.typography.body2,
 	padding: theme.spacing(1),
@@ -51,17 +51,7 @@ const Item = styled(Paper)(({ theme }) => ({
 		</>
 	)
  }
- function mergeSkills(skillsets){
-    let skills = [];
-	console.log(skillsets);
-    for (var key in skillsets){
-        for (var value in skillsets[key]){
-            console.log(skillsets[key][value]);
-            skills.push([key,value,skillsets[key][value]]);
-        }
-    }
-    return skills;
-}
+
 
 const Project = (props) => {
 	let projectProfile = props.project;

@@ -3,7 +3,7 @@ import React from 'react';
 import { ResponsiveHoneycomb, Hexagon } from 'react-honeycomb';
 
 //Only for representing skills
-function mergeSkills(skillsets){
+export function mergeSkills(skillsets){
     let skills = [];
     for (var key in skillsets){
         for (var value in skillsets[key]){
@@ -14,7 +14,7 @@ function mergeSkills(skillsets){
     return skills;
 }
 
-function HoneyCombGrid({skills}) {
+export function HoneyCombGrid({skills}) {
 
     return (
         <ResponsiveHoneycomb
@@ -41,4 +41,3 @@ function HoneyCombGrid({skills}) {
 
 
 }
-export default HoneyCombGrid;

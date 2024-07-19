@@ -4,6 +4,7 @@ import "./styles/descriptionDrawer.css"
 import Divider from '@mui/material/Divider';
 import skill_sets from '../../data/skills';
 import SkillsPresentation from '../skills/skillsPresentation';
+import {mergeSkills,HoneyCombGrid} from '../common/HoneyCombGrid';
 
 export default function DescriptionDrawer({workDetails}) {
   // const [open, setOpen] = React.useState(false);
@@ -20,25 +21,21 @@ export default function DescriptionDrawer({workDetails}) {
   });
 
   return (
-    <Box role="presentation"  className = "drawer-container">
 
-        <Grid container spacing={2} className='description-container'>
+        <Grid container className='description-container'>
 
-                  <Grid item xs={7}>
+                  <Grid item xs={12}>
                     <Typography variant="h4" className='work-content-heading'>Description</Typography>
                     {detailsUILIist}
                   </Grid>
-                  <Divider orientation="vertical" flexItem />
 
-                  <Grid item xs={4}>
+                  <Grid item xs={12}>
+
                     <Typography variant="h4" className='work-content-heading'>Tech Stack</Typography>
-                    <SkillsPresentation title = "Programming Languages" skills = {tech_stack["languages"]} />
-                    <SkillsPresentation title = "Frameworks" skills = {tech_stack["frameworks"]} />
-                    <SkillsPresentation title = "Databases" skills = {tech_stack["databases"]} />
-                    <SkillsPresentation title = "Tools" skills = {tech_stack["tools"]} />
+                    <HoneyCombGrid skills = {mergeSkills(tech_stack)}/>
+
 
                   </Grid>
         </Grid>
-      </Box>
   );
 }

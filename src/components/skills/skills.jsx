@@ -9,7 +9,7 @@ import "./styles/skills.css"
 import { ResponsiveHoneycomb, Hexagon } from 'react-honeycomb';
 import { Grid, Icon, Stack } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
-import HoneyCombGrid from '../common/HoneyCombGrid';
+import {mergeSkills,HoneyCombGrid} from '../common/HoneyCombGrid';
 
 
 let SkillsLegend = ({color,name}) =>{
@@ -23,16 +23,7 @@ let SkillsLegend = ({color,name}) =>{
 
     )
 };
-function mergeSkills(skillsets){
-    let skills = [];
-    for (var key in skillsets){
-        for (var value in skillsets[key]){
-            console.log(skillsets[key][value]);
-            skills.push([key,value,skillsets[key][value]]);
-        }
-    }
-    return skills;
-}
+
 
 function Skills( ) {
     return (
