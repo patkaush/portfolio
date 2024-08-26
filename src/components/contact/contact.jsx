@@ -1,32 +1,23 @@
 import React, { useState } from 'react';
-import { Box, TextField, Button, Typography, Divider } from '@mui/material';
+import { Box,  Typography} from '@mui/material';
 import './styles/contact.css';
 import ContactDetails from './contactDetails';
-import ContactForm from './contactForm';
 
 const Contact = () => {
 
 
     return (
         <div id="contact_section">
-            <Typography variant="h3" style={{textAlign : "center"}} > Contact</Typography>
-        <Box     
-            sx={{
-                display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                gap: 2,
-                padding: 2,
-            }}>
+		<Typography variant="h1" className='section-title' style={{color:' var(--primary-color) '}}>Contact</Typography>
+        <Box
+        sx ={{
+            padding: 2,
+            height:"500px",
+            alignItems: "center"
 
-            <Box className="contact-details-container">
+        }}className="contact-details-container">
                 <ContactDetails />
             </Box>
-            <Divider orientation="vertical" flexItem style={{ border: "1px solid black" }} />
-            <Box>
-                <ContactForm />
-            </Box>
-        </Box>
-
         </div>
     );
 };

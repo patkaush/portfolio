@@ -27,7 +27,7 @@ const Item = styled(Paper)(({ theme }) => ({
 			<Typography sx={{ width: '33%', flexShrink: 0 }}>
 					{title}
 			</Typography>
-			<Typography sx={{ color: 'var(--quaternary-color)' }}>{description}</Typography>
+			<Typography sx={{ color: 'var(--primary-color)' }}>{description}</Typography>
 		</>
 
 	)	
@@ -59,20 +59,20 @@ const Project = (props) => {
 	
     let detailsUILIist = []
     details.forEach( (detail,index) => {
-        detailsUILIist.push( <ListItem key={index} sx={{ display: 'list-item' }}>{detail}</ListItem>)
+        detailsUILIist.push( <ListItem key={index} sx={{ display: 'list-item' }}><Typography variant="paragraph">{detail}</Typography></ListItem>)
     });
 	const techStack = projectProfile.techStack;
 	return (
 			<Accordion expanded={props.expanded } onChange={props.handleChange} className="project-container">
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon fontSize="large" sx={{color : "var(--quaternary-color)"}}/>}
+					expandIcon={<ExpandMoreIcon fontSize="large" sx={{color : "var(--primary-color)"}}/>}
 					>
 						{
 							props.expanded ? project_header(title,projectProfile.date): project_summary(title,description) 
 						}
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography sx={{ width: '33%', flexShrink: 0 }}> Description</Typography>
+					<Typography variant="subheading"> Description</Typography>
 					<List sx={{
 					listStyleType: 'disc',
 					listStylePosition: 'inside'
@@ -82,28 +82,9 @@ const Project = (props) => {
 					</List>
 					{techStack != null ?
 						<div>
-							<Typography sx={{ width: '33%', flexShrink: 0 }}> Technology Used</Typography> 
+							<Typography variant="subheading"> Technology Used</Typography> 
 								<div className="tech-stack"> 
-									{/* {Object.entries(techStack).map( ([title,technologies]) =>
-										<Stack direction="row" spacing={2}  className="tech-stack-container" >
-											<Typography variant="h7"  gutterBottom className='tech-title'>
-											{title}:
-											</Typography> */}
-								<HoneyCombGrid skills = {mergeSkills(techStack)}/>
-											{/* {Object.entries(technologies).map( ([name,icon]) => 
-												<Paper elevation={3} className='tech-button'>
-												<Box display="flex" textAlign="center">
-													<Typography variant="h7"  className='skill-name'>
-														{name}              
-													</Typography>
-													<Icon fontSize="large" className='skill-icon'>
-														{icon}
-													</Icon>
-												</Box>
-												</Paper>
-												)} */}
-										{/* </Stack>
-									)} */}
+								<HoneyCombGrid skills = {mergeSkills(techStack)} func = "project"/>
 								</div>
 						</div>
 					: <div/>}

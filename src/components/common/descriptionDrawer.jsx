@@ -17,7 +17,7 @@ export default function DescriptionDrawer({workDetails}) {
   console.log(tech_stack)
   let detailsUILIist = [];
   details.forEach( (detail,index) => {
-      detailsUILIist.push( <ListItem key={index} sx={{ display: 'list-item' }}><Typography variant="h7">{detail}</Typography></ListItem>)
+      detailsUILIist.push( <ListItem key={index} sx={{ display: 'list-item' }}><Typography variant="paragraph">{detail}</Typography></ListItem>)
   });
 
   return (
@@ -25,14 +25,14 @@ export default function DescriptionDrawer({workDetails}) {
         <Grid container className='description-container'>
 
                   <Grid item xs={12}>
-                    <Typography variant="h4" className='work-content-heading'>Description</Typography>
+                    <Typography variant="subheading" className='work-content-heading'>Description</Typography>
                     {detailsUILIist}
                   </Grid>
 
                   <Grid item xs={12}>
 
-                    <Typography variant="h4" className='work-content-heading'>Tech Stack</Typography>
-                    <HoneyCombGrid skills = {mergeSkills(tech_stack)}/>
+                    <Typography variant="subheading" className='work-content-heading'>Skills Acquired</Typography>
+                    <HoneyCombGrid skills = {mergeSkills(tech_stack)} func = "work_profile"/>
 
 
                   </Grid>

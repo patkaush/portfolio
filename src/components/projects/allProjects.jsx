@@ -17,7 +17,7 @@ const AllProjects = () => {
 	return (
 		<div  >
 
-		<Typography variant="h2" align="center" className='section-title' style={{color:' var(--primary-color) '}}>Projects</Typography>
+		<Typography variant="h1"  className='section-title' style={{color:' var(--primary-color) '}}>Projects</Typography>
 
 		<div className="all-projects-container">
 

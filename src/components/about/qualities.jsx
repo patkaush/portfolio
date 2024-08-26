@@ -19,7 +19,7 @@ let Qualities = () => {
         <Paper elevation={3} className='qualities-container'>
                 
             <Typography variant="body1">
-                <Typography variant="h5" gutterBottom>
+                <Typography variant="subheading" gutterBottom>
                     My top 5 Qualities
                 </Typography>
                 <ul>

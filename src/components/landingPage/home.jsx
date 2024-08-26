@@ -1,9 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
-import { Box, Container, Typography, Switch, Icon } from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Parallax } from 'react-parallax';
-import bgImage from "../../images/background-img.jpg"
+import { Container, Typography, } from '@mui/material';
+import bgImage from "../../images/landing-page.svg"
 
 function Home() {
   let sharedData = {
@@ -36,11 +34,13 @@ function Home() {
           }}
           
         >
-
-            <Typography variant="h4" sx={{ margin: '0.5em 0' }}>
+            <Typography variant="titles">
+              Hi, I am 
+            </Typography>
+            <Typography variant="h2" >
               {sharedData["name"]}
             </Typography>
-            <Typography variant="subtitle1" >
+            <Typography variant="boldText" >
                 <HeaderTitleTypeAnimation />
             </Typography>
         </Container>

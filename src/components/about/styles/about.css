@@ -16,12 +16,12 @@
 }
 
 .homepage-social-icon {
-	color: var(--tertiary-color);
+	color: var(--background-color);
 }
 .third-party-icon{
 	max-width: 85% ;
 	padding-bottom: 15%;
-	background-color: var(--tertiary-color);
+	background-color: var(--background-color);
 	border-radius: 10px !important;
 
 
@@ -32,7 +32,7 @@
 	border-radius: 30px !important;
 	height: 180px;
 	background-color:  var(--primary-color)!important;
-	color : var(--tertiary-color) !important;
+	color : var(--background-color) !important;
 }
 .personal-comp{
 	width: 75%;
@@ -50,7 +50,9 @@ a{
 	
 }
 #qualities-profiles-container .item{
-	padding-right: 5%;
-	padding-left: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+
 	min-width: 300px ; 
 }

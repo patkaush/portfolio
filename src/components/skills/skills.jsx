@@ -17,7 +17,7 @@ let SkillsLegend = ({color,name}) =>{
         <Grid item xs={3} className='grid-item'>
             <Stack direction="row" display={"flex"}>
                 <CircleIcon style={{ color ,marginRight : "5px" }} />
-                <Typography >{name}</Typography>
+                <Typography variant="boldText">{name}</Typography>
             </Stack>
         </Grid>
 
@@ -29,16 +29,16 @@ function Skills( ) {
     return (
 
         <div className='skills-container'>
-      <Typography variant="h2"  align="center" className='section-title' style={{color:' var(--primary-color) '}}>Technical Skills</Typography>
+      <Typography variant="h1"  className='section-title' style={{color:' var(--primary-color) '}}>Technical Skills</Typography>
 
             <Box className="skills-table">
                     <HoneyCombGrid skills={mergeSkills(skill_sets)}/>
 
                     <Grid display={"flex"} className='skills-legend'>
-                        <SkillsLegend color = " var(--primary-color) " name = "Programming Languages"/> 
-                        <SkillsLegend color = "var(--quaternary-color)" name = "Frameworks"/> 
-                        <SkillsLegend color = "var(--tertiary-color)" name = "Databases"/> 
-                        <SkillsLegend color = "var(--secondary-color)" name = "Tools"/> 
+                        <SkillsLegend color = " #ffb897 " name = "Programming Languages"/> 
+                        <SkillsLegend color = "#ffd1a3" name = "Frameworks"/> 
+                        <SkillsLegend color = "#fce4c0" name = "Databases"/> 
+                        <SkillsLegend color = "#f3f1e5" name = "Tools"/> 
                     </Grid>
                 </Box>
         </div>

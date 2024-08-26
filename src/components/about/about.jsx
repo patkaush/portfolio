@@ -12,18 +12,15 @@ import lclogo from '../../images/leetcode-svgrepo-com.svg';
 import hackerrank from '../../images/hackerrank-svgrepo-com.svg';
 import { styled } from '@mui/system';
 
-const Highlight = styled('span')({
-	color:"var(--secondary-color)"
-});
+
 
 const HighlightedText = ({ text, keywords }) => {
   const parts = text.split(new RegExp(`(${keywords.join('|')})`, 'gi'));
-  console.log(parts);
   return (
-    <Typography variant="h6"  style={{color:' var(--primary-color) '}}>
+    <Typography variant="paragraph"  style={{color:' var(--font-color) '}}>
       {parts.map((part, index) => 
         keywords.includes(part.toLowerCase()) ? (
-          <Highlight key={index}>{part}</Highlight>
+          <Typography key={index} color={"var(--primary-color)"} variant ="boldText"> {part}</Typography>
         ) : (
           part
         )
@@ -34,10 +31,10 @@ const HighlightedText = ({ text, keywords }) => {
 const Personal = () => (
      
     <div className="personal-description">
-      {INFO.homepage.description.map((text, index) => (
+      {about_profile.user_details.description.map((text, index) => (
         <>
-        <HighlightedText key={index} text={text} keywords={INFO.homepage.keywords} /> 
-        <br/>
+        <HighlightedText key={index} text={text} keywords={about_profile.user_details.keywords} /> 
+        <br/><br/>
         </>
         
       ))}
@@ -51,7 +48,7 @@ const Personal = () => (
 const Profiles = () => (
 
   <Paper elevation={3} className='profiles-container'>
-    <Typography variant="h5" gutterBottom>
+    <Typography variant="subheading" gutterBottom>
       Social Profiles
     </Typography>
     <div className="homepage-socials">
@@ -105,7 +102,7 @@ const Profiles = () => (
 const AboutMe = () => (
     <Grid  id='aboutme-container' >
       <Grid xs={12} >
-        <Typography variant="h2" align="center" className='section-title' style={{color:' var(--primary-color) '}}>
+        <Typography variant="h1"  className='section-title' style={{color:' var(--primary-color) '}}>
             About me
         </Typography>
         </Grid>

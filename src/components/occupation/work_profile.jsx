@@ -27,19 +27,19 @@ const WorkProfile = (props) => {
 		<CardContent>
 			<Grid container>
 			  <Grid  xs={9}>
-			  <Typography className="work-position"variant="h4" >{workProfile.position}</Typography>
+			  <Typography className="work-position"variant="titles" >{workProfile.position}</Typography>
 			  </Grid>
 			  <Grid  xs = {3} sx={{alignContent:"center",textAlign:"right"}}>
 			  <Typography className="work-date"variant="h7" >{workProfile.date_of_joining + " - " + workProfile.data_of_ending} </Typography>
 			  </Grid>
 			  <Grid  xs={10}>
-			  <Typography className="work-company"variant="h6" >{workProfile.company_name} </Typography>
+			  <Typography className="work-company"variant="subtitles" >{workProfile.company_name} </Typography>
 			  </Grid>
 			  <Grid  xs={2} sx={{alignContent:"center",textAlign:"right"}}>
 			  <Typography className="work-location"variant="h7" >{workProfile.location} </Typography>
 			  </Grid>
-			  <Grid xs = {12} >
-				<Typography variant='h6' className="work-summary" style={{textAlign:"center"}}>{workProfile.summary}</Typography>
+			  <Grid xs = {12} style={{textAlign:"center",marginTop:"20px"}}>
+				<Typography variant='boldText' className="work-summary" >{workProfile.summary}</Typography>
 			  </Grid>
 			</Grid>
 		</CardContent>

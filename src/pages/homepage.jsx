@@ -1,38 +1,49 @@
 import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
 
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
 import Works from "../components/occupation/works";
 import AllProjects from "../components/projects/allProjects";
 import Contact from "../components/contact/contact";
-import INFO from "../data/user";
-import SEO from "../data/seo";
-import { Parallax } from 'react-parallax';
-import bgImage from "../images/background-img.jpg"
 import "./styles/homepage.css";
-import Education from "../components/education/education";
 import Skills from "../components/skills/skills";
 import AboutMe from "../components/about/about";
-import Home from "../components/home/home"
+import Home from "../components/landingPage/home"
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const fontType = createTheme({
+
 	typography: {
-	  fontFamily: 'Open Sans, sans-serif',
-	  h1: {
-		fontWeight: 700,
-	  },
-	  h2: {
-		fontWeight: 600,
-	  },
-	  body1: {
-		fontWeight: 400,
-	  },
-	  body2: {
-		fontWeight: 300,
-	  },
-	},
+		fontFamily: 'Open Sans, sans-serif',
+		fontSize: 16,
+		h1: {
+		  fontSize: '4rem',
+		  fontWeight: 700,
+		},
+		titles: {
+			fontSize: '2rem',
+			fontWeight: 550,
+		},
+		subtitles: {
+			fontSize: '1.3rem',
+			fontWeight: 400,
+		},
+		subheading: {
+		fontSize: '1.6rem',
+		fontWeight: 500,
+		},
+		  paragraph: {
+		  fontSize: '1.2rem',
+		  fontWeight: 500,
+		  lineHeight:1.5
+		},
+		boldText: {
+			fontSize: '1.3rem',
+			fontWeight: 700, // Custom bold style
+		  },
+		button: {
+		  fontSize: '0.875rem',
+		  fontWeight: 500,
+		},
+	  },	
   });
 const Homepage = () => {
 
@@ -83,11 +94,7 @@ const Homepage = () => {
 							<Contact />
 						</div>
 					</div>
-					<div className="page-footer">
-						<div className="content-wrapper">
-							<Footer />
-						</div>
-					</div>
+
 				</div>
 				</ThemeProvider>
 		</React.Fragment>

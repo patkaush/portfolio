@@ -14,12 +14,16 @@ export function mergeSkills(skillsets){
     return skills;
 }
 
-export function HoneyCombGrid({skills}) {
-
+export function HoneyCombGrid({skills,func = null}) {
+    let size = 70;
+    if (func != null){
+        size = 50;
+    }
+    console.log(func)
     return (
         <ResponsiveHoneycomb
         defaultWidth={10}
-        size={70} 
+        size={size} 
         items={skills}
         renderItem={([category,name,icon]) => (
             <Hexagon className={'hex-grid '+category}

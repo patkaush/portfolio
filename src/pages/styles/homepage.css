@@ -1,30 +1,17 @@
 @import "../../data/styles.css";
 
-.homepage-aboutme, .homepage-education, .homepage-contact{
-	height: 100vh;
-}
-.homepage-aboutme, .homepage-education, .homepage-projects,.homepage-contact{
-	background-color:  #F6F2DE !important;
-	background-size: cover;
-	/* background-position: 'center';
-	background-attachment: 'fixed';  */
-}
-/* .homepage-works */
-/* .homepage-skills {
-	background-color:   #F5DBC0!important;
-	background-size: cover;
 
+.homepage-aboutme, .homepage-projects, .homepage-contact{
+	background-color:  var(--background-color) !important;
+	/* background: linear-gradient(#F3F1E5 0%, #FFFFFF 100%) !important; */
 
-} */
+}
+.homepage-works,.homepage-skills{
+	background-color:  var(--alternating-bg-color)!important;
+	/* background: linear-gradient(#F3F1E5 0%, #FFFFFF 100%) !important; */
+}
 .content-wrapper{
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
-
-@media (max-width: 1500px) {
-	.homepage-aboutme, .homepage-education, .homepage-contact{
-		height: auto;
-	}
-	
-}

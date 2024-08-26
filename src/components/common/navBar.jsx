@@ -1,8 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Link } from 'react-scroll';
 import "./styles/navBar.css";
-import Typography from '@mui/material/Typography';
 import { BottomNavigation, BottomNavigationAction, Paper } from '@mui/material';
 import { useState } from 'react'
 import Box from '@mui/material/Box';
@@ -11,11 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import HomeIcon from '@mui/icons-material/Home';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import ComputerIcon from '@mui/icons-material/Computer';
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import WorkIcon from '@mui/icons-material/Work';
-import ServicesIcon from '@mui/icons-material/Build';
-import AboutIcon from '@mui/icons-material/Info';
-import ContactIcon from '@mui/icons-material/ContactMail';
 import { ContactMail, Padding } from "@mui/icons-material";
 let NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +18,6 @@ let NavBar = () => {
         { icon: <WorkIcon />, name: "Works" ,link : "works_section"},
         { icon: <ComputerIcon />, name: "Projects" ,link : "projects_section"},
         { icon: <HandymanIcon />, name: "Skills" ,link : "skills_section"},
-        // { icon: <AccountBalanceIcon />, name: "Education" ,link : "education_section"},
         { icon: <ContactMail />, name: "Contact" ,link : "contact_section"},
     ];
 	return (

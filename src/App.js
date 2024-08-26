@@ -8,7 +8,7 @@ import Notfound from "./pages/404";
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 import NavBar from "./components/common/navBar";
-import Home from "./components/home/home";
+import Home from "./components/landingPage/home";
 
 function App() {
 	useEffect(() => {

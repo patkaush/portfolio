@@ -12,10 +12,17 @@
 }
 .project-container{
 	border-radius: 10px !important;
-	background: var(--primary-color) !important;
-	color: var(--quaternary-color) !important;
-
+	/* background: var(--primary-color) !important; */
+	color: var(--primary-color) !important;
+	border-color: var(--primary-color) !important;
 }
 .project-title{
-	color: var(--quaternary-color);
+	color: var(--primary-color);
+}
+.tech-stack .skill-name{
+	display: none;
+}
+.project-container .languages,.project-container .tools,.project-container .frameworks,.project-container .databases {
+	/* padding: 0% !important; */
+	background-color: var(--background-color);
 }
