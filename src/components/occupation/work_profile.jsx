@@ -45,7 +45,7 @@ const WorkProfile = (props) => {
 		</CardContent>
 		<CardActions disableSpacing style={{padding:"0"}}>
 		  <Button className="read-more-button" size="small"  onClick={handleExpandClick} style={{color:'var(--primary-color)',padding:"0",textTransform:"none"}}>
-		   <Typography variant='h6' style={{textAlign:"right",color : "var(--secondary-color)"}}>{expanded ?"Hide Details" : "Read more"} </Typography>
+		   <Typography variant='subtitles' style={{textAlign:"right",color : "var(--secondary-color)"}}>{expanded ?"Hide Details" : "Read more"} </Typography>
 		   
 		  </Button>
 

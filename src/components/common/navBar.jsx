@@ -22,6 +22,7 @@ let NavBar = () => {
     ];
 	return (
         <div className="nav-container">
+        <Box >
                 <BottomNavigation showLabels id="bottom-nav">
                     {icons.map((item, index) => (
                         <Link to = {item.link} key={index} spy={true} smooth = {true}    activeClass="active" >
@@ -34,6 +35,7 @@ let NavBar = () => {
                     ))}
 
                 </BottomNavigation>
+            </Box>
         <Box className = "navbar">
             {icons.map((item, index) => (
                 <Link to = {item.link} key={index} spy={true} smooth = {true}    activeClass="active" >

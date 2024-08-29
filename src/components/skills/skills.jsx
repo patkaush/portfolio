@@ -2,7 +2,6 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import skill_sets from '../../data/skills';
-import SkillsPresentation from './skillsPresentation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SvgIcon from '@mui/material/SvgIcon';
 import "./styles/skills.css"
@@ -17,7 +16,7 @@ let SkillsLegend = ({color,name}) =>{
         <Grid item xs={3} className='grid-item'>
             <Stack direction="row" display={"flex"}>
                 <CircleIcon style={{ color ,marginRight : "5px" }} />
-                <Typography variant="boldText">{name}</Typography>
+                <Typography variant="paragraph">{name}</Typography>
             </Stack>
         </Grid>
 

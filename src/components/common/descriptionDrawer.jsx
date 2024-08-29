@@ -3,15 +3,9 @@ import { Drawer,Box, Typography, List, ListItem, ListItemText, Grid } from '@mui
 import "./styles/descriptionDrawer.css"
 import Divider from '@mui/material/Divider';
 import skill_sets from '../../data/skills';
-import SkillsPresentation from '../skills/skillsPresentation';
 import {mergeSkills,HoneyCombGrid} from '../common/HoneyCombGrid';
 
 export default function DescriptionDrawer({workDetails}) {
-  // const [open, setOpen] = React.useState(false);
-
-  // const toggleDrawer = (newOpen) => () => {
-  //   setOpen(newOpen);
-  // }; 
   let details = workDetails.description;
   let tech_stack = workDetails.tech_stack;
   console.log(tech_stack)

@@ -37,7 +37,7 @@ const fontType = createTheme({
 		},
 		boldText: {
 			fontSize: '1.3rem',
-			fontWeight: 700, // Custom bold style
+			fontWeight: 550, // Custom bold style
 		  },
 		button: {
 		  fontSize: '0.875rem',

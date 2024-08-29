@@ -6,7 +6,7 @@ import bgImage from "../../images/landing-page.svg"
 function Home() {
   let sharedData = {
     name : "Kaushik Pattipati",
-    titles : ["SOFTWARE DEVELOPER",3000,"GRADUATE STUDENT",3000,"LEARNER",1500]
+    titles : ["SOFTWARE DEVELOPER",1000,"GRADUATE STUDENT",1000,"LEARNER",1000]
     };
 
     

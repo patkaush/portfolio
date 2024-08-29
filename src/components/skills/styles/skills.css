@@ -23,9 +23,10 @@
 
 .skills-legend{
     justify-content: center;
+    flex-wrap: wrap;
 }
 .skills-legend .grid-item{
-    margin: 5%;
+    margin: 10px;
 }
 
 .languages{
