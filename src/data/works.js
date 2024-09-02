@@ -33,13 +33,26 @@ const internship = [
 
 		description:[ "Engineered and implemented automated test suites using the Selenium Framework, resulting in a 30% reduction in manual efforts and ensuring a 20% increase in testing efficiency.",
 		"Validated the application’s performance using JUnit Meter, identifying memory leaks and led to a 25% improvement in overall code optimization, enhancing application performance."]
+	},
+	{
+		company_name : "Ameritas",
+		position:  "IT Architecture Intern",
+		location : "Omaha, NE",
+		date_of_joining: "May 2024",
+		// date_of_ending: "Present",
+		icon : <Tooltip title="Internship"><Icon  className="vertical-timeline-icon">  <img  src={iconInternship}/> </Icon></Tooltip>,
+		summary:"Tech governance and due diligence, API Library design, REST Apis, API Integrations",
+		tech_stack : {"languages":{"Python":skill_sets["languages"]["Python"]},
+						"tools":{},
+						"frameworks":{"REST Services" : skill_sets["frameworks"]["REST Services"]},
+						"databases":{}
+					},
+
+		description:[ "Collaborated with architects and senior management to enhance architectural maturity, driving improvements in tech governance and due diligence.",
+		"Designed and developed a Python library for API integration with Abacus software, reducing manual effort by 90% and achieving 100% accuracy in data entry and data cleanup workflows.",
+		"Designed and implemented a DocuSign Proof of Concept (POC), showcasing its capabilities through REST API integration. Demonstrated the solution to stakeholders, business teams, and architects, leading to a 80% reduction in manual effort for the business and sales team."
+		]
 	}
-	// {
-	// 	company_name : "Ameritas",
-	// 	position:  "IT Architecture Intern",
-	// 	location : "Omaha, NE",
-	// 	date_of_joining: "May 2024",
-	// }
 ]
 const full_time = [
 	{ company_name : "Opentext",

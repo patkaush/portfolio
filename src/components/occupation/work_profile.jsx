@@ -15,9 +15,10 @@ import DescriptionDrawer from '../common/descriptionDrawer';
 
 const WorkProfile = (props) => {
 	const workProfile = props.workProfile;
-	console.log("profile",workProfile)
 	const [expanded, setExpanded] = useState(false);
-
+	if (!("data_of_ending" in workProfile)){
+		workProfile["data_of_ending"] = "Present"
+	}
 	const handleExpandClick = () => {
 	  setExpanded(!expanded);
 	};
@@ -30,7 +31,8 @@ const WorkProfile = (props) => {
 			  <Typography className="work-position"variant="titles" >{workProfile.position}</Typography>
 			  </Grid>
 			  <Grid  xs = {3} sx={{alignContent:"center",textAlign:"right"}}>
-			  <Typography className="work-date"variant="h7" >{workProfile.date_of_joining + " - " + workProfile.data_of_ending} </Typography>
+
+			  <Typography className="work-date"variant="h7" >{workProfile.date_of_joining + " - " + workProfile.data_of_ending } </Typography>
 			  </Grid>
 			  <Grid  xs={10}>
 			  <Typography className="work-company"variant="subtitles" >{workProfile.company_name} </Typography>
