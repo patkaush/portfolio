@@ -9,6 +9,7 @@ import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 import NavBar from "./components/common/navBar";
 import Home from "./components/landingPage/home";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 	useEffect(() => {
@@ -26,7 +27,7 @@ function App() {
 				<Route path="/" element={<Homepage />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
-
+		<Analytics/>
 		</div>
 	);
 }
